@@ -1,0 +1,31 @@
+- search and replace across multiple files
+  - :grep foo -g '!bar' -g 'baz'    (ignore bar directory, look only in baz directory)
+  - :cdo s/foo/bar/gc
+
+- "+y - copy to system keyboard
+- "+p - paste from system keyboard
+
+- f-<char> - jump to next occurance of "char"
+  - ; - forward
+  - , - backward
+  - F-<char> - jump previous
+
+- <C-v> - select column of zeroes
+  - g<C-a> - incremental counting
+
+- <leader>o - open buffers list
+  - s - open buffer in vertical split, S for h split
+  - z - collapse all tree
+  - bd - close buffer
+
+
+---------------------------------------------------
+---------------------------------------------------
+
+
+TODO
+- learn find and replace, refactoring, refactoring across files
+- learn telescope
+- set file type specific indentation
+  - https://www.reddit.com/r/neovim/comments/vu1y6e/correct_way_to_set_language_specific_settings_in/
+  - https://www.reddit.com/r/neovim/comments/yrvaei/how_do_you_handle_project_specific_configuration/

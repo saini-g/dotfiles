@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "lib": ["es2023"],
+    "module": "Node16",
+    "target": "es2022",
+    "incremental": true,
+    "declaration": true,
+    "strict": true,
+    "sourceMap": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "outDir": "./dist",
+    "moduleResolution": "node16"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

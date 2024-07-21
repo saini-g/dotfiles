@@ -1,0 +1,64 @@
+format = """
+$directory\
+$git_branch\
+$python\
+$golang\
+$nodejs\
+$cmd_duration\
+$line_break\
+$character"""
+
+[username]
+show_always = true
+style_user = "bold blue"
+style_root = "red"
+format = "[$user]($style) "
+
+[directory]
+style = "yellow"
+read_only = "󰌾"
+read_only_style = "red"
+truncate_to_repo = false
+format = "[$path]($style) [$read_only]($read_only_style) "
+
+[git_branch]
+symbol = ""
+style = "white"
+format = " [on $symbol $branch]($style) "
+
+[git_status]
+ahead = "[ $count](green)"
+behind = "[ $count](red)"
+untracked = "[ U$count](yellow)"
+modified = "[ M$count](dimmed blue)"
+staged = "[ $count](green)"
+renamed = "[ R$count](blue)"
+deleted = "[ $count](red)"
+format = "$ahead$behind$staged$untracked$modified$renamed$deleted"
+
+[cmd_duration]
+style = "white"
+format = "[  took $duration]($style)"
+
+[character]
+success_symbol = "[](green)"
+error_symbol = "[](red)"
+vimcmd_symbol = "[](green)"
+
+[python]
+symbol = ""
+format = "[  $symbol $version | $virtualenv]($style) "
+style = "bright-yellow"
+
+[nodejs]
+symbol = ""
+style = "green"
+not_capable_style = "red"
+format = "[  $symbol $version]($style)"
+
+[golang]
+symbol = ""
+style = "blue"
+not_capable_style = "red"
+format = "[  $symbol $version]($style)"
+

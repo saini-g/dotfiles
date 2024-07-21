@@ -1,0 +1,63 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
+      "error",
+      {
+        "allowComparingNullableBooleansToTrue": false,
+        "allowComparingNullableBooleansToFalse": false
+      }
+    ],
+    "@typescript-eslint/no-unnecessary-type-constraint": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "@typescript-eslint/prefer-for-of": "error",
+    "curly": "error",
+    "default-case": "error",
+    "default-case-last": "error",
+    "eqeqeq": ["error", "smart"],
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-debugger": "error",
+    "no-empty": "error",
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "no-return-assign": ["error", "always"],
+    "no-return-await": "error",
+    "no-trailing-spaces": "error",
+    "no-var": "error",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "block-like" },
+      { "blankLine": "always", "prev": "*", "next": "case" },
+      { "blankLine": "always", "prev": "*", "next": "class" },
+      { "blankLine": "always", "prev": "*", "next": "default" }
+    ],
+    "prefer-template": "error",
+    "prettier/prettier": 2,
+    "require-await": "error"
+  }
+}

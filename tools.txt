@@ -1,0 +1,15 @@
+- alacritty
+- zsh
+  - try working w/o o-my-zsh and starship are needed
+- ripgrep
+- fzf
+- tmux, tpm
+- neovim
+
+- git
+- nvm
+- docker, docker-compose
+- go
+- python
+- postman
+- slack
